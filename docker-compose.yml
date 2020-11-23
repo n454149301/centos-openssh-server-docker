@@ -1,0 +1,10 @@
+version: '2.3'
+services:
+  master-hadoop:
+    restart: always
+    image: duan/centos-ssh:centos8-v2
+    ports:
+      - "10022:10022"
+    volumes:
+      - ./ssh:/root/.ssh
+    command: tail -f /dev/null
