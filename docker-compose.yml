@@ -1,8 +1,8 @@
-version: '2.3'
+version: '3.7'
 services:
   master-hadoop:
     restart: always
-    image: duan/centos-ssh:centos8-v2
+    image: n454149301/centos-openssh-server:centos8
     ports:
       - "10022:10022"
     volumes:
